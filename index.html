@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="/home/kelson/Survey-form/index.css">
+  </head>
+  <body id="body">
+    <h1 id="title">Title</h1>
+    <p id="description">Description</p>
+      <form id="survey-form">
+        <div id="name" class="row-format">
+            <div id="name-label"class="label-format">
+              <label>Name*</label>
+            </div>
+            <div class="input-format">
+              <input class="input" type="text" name="name" placeholder="First Last" id="name" required></input>
+            </div>
+        </div>
+        <div id="email" class="row-format">
+            <div id="email-label"class="label-format">
+              <label>Email*</label>
+            </div>
+            <div class="input-format">
+              <input class="input" type="email" placeholder="Name@email.com" id="email" required></input>
+            </div>
+        </div>
+        <div id="number" class="row-format">
+            <div id="number-label"class="label-format">
+              <label>Age*</label>
+            </div>
+            <div class="input-format">
+              <input class="input" type="number" placeholder="Age" min="1" max="120" id="number" required></input>
+            </div>
+        </div>
+        <div id="drop-down" class="row-format">
+            <div class="label-format">
+              <label>Dropdown*</label>
+            </div>
+            <div class="input-format">
+              <select name="options" id="dropdown" class="input" required>
+                <option value="select one">select one</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
+              </select>
+            </div>
+        </div>
+        <div id="radio-buttons">
+          <ul id="radio-buttons">
+            <li class="row-format">
+              <div class="label-format">
+                <label>Option 1</label>
+              </div>
+              <div class="input-format">
+                <input type="radio" name="radio-buttons" value="1"></input>
+                #1
+              </div>
+            </li>
+            <li class="row-format">
+              <div class="label-format">
+                <label>Option 2</label>
+              </div>
+              <div class="input-format">
+                <input type="radio" name="radio-buttons" value="2"></input>
+                #2
+              </div>
+            </li>
+            <li class="row-format">
+              <div class="label-format">
+                <label>Option 3</label>
+              </div>
+              <div class="input-format">
+                <input type="radio" name="radio-buttons" value="3"></input>
+                #3
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="extra-coments" class="row-format">
+          <div class="label-format">
+            <label>Extra Comments</label>
+          </div>
+          <div class="input-format">
+            <input type="text"></input>
+          </div>
+        </div>
+          <button type="submit" id="submit">Submit</button>
+      </form>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
